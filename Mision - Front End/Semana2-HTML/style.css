@@ -1,0 +1,180 @@
+* {
+       box-sizing: border-box;
+  }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #67b4d5;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ffffff;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color:  #67b4d5;;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+/* ----- barra de navegación ----- */
+nave {
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+bot {
+  float: left;
+}
+
+bot a {
+  display: block;
+  color: #236ebe;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+bot a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+bot a.active {
+  color: white;
+  background-color: #0480a9;
+}
+
+/* fin barra de navegación */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+/* Container for flexboxes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns */
+.column {
+  flex: 25%;
+  padding: 20px;
+}
+
+/* Se ejustan las imagenes */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+form{
+  max-width: 100%;
+  height: auto;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#f4f9fa;
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width:60%;
+	padding:3px 10px;
+	border:1px solid #84a5e6;
+	border-radius:3px;
+	background-color:#ffffff;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:50%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}
