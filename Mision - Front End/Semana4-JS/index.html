@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js">
+
+  
+</script>
+
+  
+</head>
+
+<header>
+  
+<h1>Pokedex LaunchX</h1>
+</header>
+
+
+  
+<body>
+  <div class="container">
+    <div class="pokedex">
+        <img class="img-responsive " src="img/01_pokedex.png" >
+      
+         <div class="main-image">
+            <img class="img-responsive" src="img/02_shadow.png"   id="pokeImg">
+         </div>
+
+         <!-- > ** Muestra nombre del pokemon ***</-->
+         <div class="pokename-text">
+	           <p id= "NamePokemon" style="font-size:2.15vw;">Nombre Pokemon</p>
+         </div>
+
+         <!-- > ** Muestra informacion sobre pokemon ***</-->
+         <div class="pokename-info">
+	           <p style="font-size:2 vw;" >Información Pokemon  </p> 
+	           <p>Tipo:  <span id= "TipoPokemon" > xxx </span> </p>
+	           <p>Altura:  <span id= "AlturaPokemon" > xxx </span>  m </p>
+	           <p>Peso:  <span id= "PesoPokemon" > xxx </span>  kg </p>
+          
+         </div>
+
+      
+         <!-- > ** Muestra movimientos del pokemon ***</-->
+         <div class="poke-moves">
+	           <p>Movimientos  </p> 
+             <ul id= "MovesPokemon">
+            </ul>
+          
+         </div>
+      
+   
+       <!-- > *******************************</-->
+         <!-- > Input para obtener el pokemon      </-->
+         <!-- > *******************************</-->
+        
+          <input type="text" placeholder="Pokemon a buscar ..." id="pokeName" name="pokeName">
+          <button onclick="fetchPokemon()">Buscar</button>
+      
+
+     </div>    
+    
+</div>
+
+
+ <div class= "contenedor-grafica">
+    <canvas id="myChart" ></canvas>  
+ </div> 
+
+<footer>
+  
+<h4>Realizado por Pamela Salgado</h4>
+ <h5> © 2022 Copyright:
+    Pokedex
+</footer>
+
+
+
+    <script src="script.js"></script>
+  
+</body>
+</html>

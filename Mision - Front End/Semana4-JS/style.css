@@ -1,0 +1,208 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+
+
+body {
+  font-family: 'Roboto Slab', serif;
+  text-align: center;  
+  font-weight: bold;
+  font-size: 8vw;
+  background-image: url("https://i.pinimg.com/originals/88/15/c1/8815c1530ba8b997d50d365e5875d1d7.gif");
+  background-color: #079ae4;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  
+  color: #267;
+  
+}
+
+
+header {
+	text-align: center;
+	width: 100%;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+	color: #FFF;
+	border-radius: 0 0 85% 85% / 30%;
+  background: linear-gradient(45deg,  #003975,  #0050f0);
+}
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 6vw;
+}
+
+h3, p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+h4 {
+	font-family:  Consolas,monaco,monospace;
+	font-size: 2.5vw;
+   line-height:0;
+}
+h5 {
+	font-family:  Consolas,monaco,monospace;
+	font-size: 2vw;
+   line-height:0;
+}
+
+
+
+
+
+/* **************************** */
+/*   Inicio Estilos pokedex     */
+/* **************************** */
+.pokedex {margin: 5%}
+
+.pokedex .main-image{
+    position: absolute;
+    overflow: hidden;
+}
+
+/* Imagen principal pokemon */
+.pokedex .main-image {
+    opacity: 1;
+    width: 21%;
+    height: auto;
+    /*Posicion dentro del pokedez*/
+    top:24%;   left: 18%; 
+}
+
+/* nombre pokemon lado izquierdo */
+.pokedex .pokename-text {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 5px;
+    border: .3vw solid #232919;
+    opacity: 0.8;
+    width: 22%;
+    height: 8%;
+    background-color: #78ddae;
+	  color: #000000;
+  
+    text-align: center center;
+   line-height:.2;
+    top:66%;   left: 18%;  
+}
+
+/* Para mostrar la informacion del pokemon */
+.pokedex .pokename-info {
+    position: absolute;
+    overflow: hidden;
+    border: .3vw solid #232919;
+    width: 29%;
+    height: 20%;
+    background-color: #034a6d;
+	  color: #ffffff;
+  
+    top:25%;   left: 55.5%;  
+}
+
+
+/* Para mostrar la informacion del pokemon */
+.pokedex .poke-moves {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 0.8vw;
+    opacity: 0.8;
+    border: .3vw solid #232919;
+    width: 29%;
+    height: 22%;
+    background-color: #67257e;
+	  color: #ffffff;
+  
+    top:50%;   left: 55.5%;  
+}
+
+
+.pokedex .pokename-info p{
+	 font-family: Consolas,monaco,monospace;
+  font-size:1.7vw;
+   line-height:.5;
+  
+}
+
+.pokedex .poke-moves ul{
+	 font-family: Arial Narrow, sans-serif;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+   font-size:1.5vw;
+   line-height:1;
+    text-align: left;
+}
+
+.pokedex .poke-moves p{
+	 font-family: Consolas,monaco,monospace;
+  font-size:1.8vw;
+   line-height:0;
+  /*left: .5%; */ 
+}
+
+
+
+
+/****** Boton de busqueda *******/
+button {
+    overflow: hidden;
+  background: #CC0051;
+  color: #FFF;
+  width: 18%;
+   font-size:2vw;
+}
+input[type="text"] {
+    overflow: hidden;
+  width: 28%;
+  box-sizing: relative;
+   font-size:2vw;
+}
+
+
+
+
+ ::placeholder {
+	 font-weight: bold;
+  color: #ffffff;
+  background-color:#0d61ce;
+}
+
+.container{position:relative;
+  }
+
+.container img{width: 89%;
+ }
+
+
+footer {
+	text-align: center;
+	width: 100%;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+	color: #FFF;
+	border-radius: 85% 85% 0 0 / 30%;
+  background: linear-gradient(45deg,  #003975,  #0050f0);
+}
+
+
+.contenedor-grafica canvas{
+  width:100%;
+  max-width:50vw;
+}
+
+
+
+.contenedor-grafica {
+  padding: 10px;
+  width: 50%; 
+  background-color: #f1eaea;
+  position: relative;
+  opacity: 0.9;
+  left: 20%;
+}
