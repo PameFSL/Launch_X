@@ -57,6 +57,8 @@ public class Mago {
         this.patronus = patronus;
         this.genero = genero;
     }
+
+
     /*------ Fin Sobrecarga de contrucción ---------- */
 
     public String getNombre() { return nombre; }
@@ -68,6 +70,39 @@ public class Mago {
     public String getBoggart() { return boggart; }
 
     public String getPatronus () { return patronus; }
+
+    public boolean setNombre(String nombre){
+        if(!nombre.isEmpty()){
+            this.nombre = nombre;
+            return true;
+        } else
+            return false;
+    }
+
+    public boolean setCasa(String nombre){
+        if(!casa.isEmpty()){
+            this.casa = casa;
+            return true;
+        } else
+            return false;
+    }
+
+    public boolean setBoggart(String nombre){
+        if(!boggart.isEmpty()){
+            this.boggart = boggart;
+            return true;
+        } else
+            return false;
+    }
+
+
+    public boolean setPatronus(String patronus){
+        if(!patronus.isEmpty()){
+            this.patronus = patronus;
+            return true;
+        } else
+            return false;
+    }
 
     // Funcion para imprimir los valores
 
